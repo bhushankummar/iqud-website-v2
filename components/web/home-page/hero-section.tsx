@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import HeroLogoMarquee from "./hero-logo-marquee";
 import { TextAnimate } from "@/components/ui/text-animate";
 import { motion } from "framer-motion";
@@ -25,18 +24,18 @@ export default function HeroSection() {
       {/* Hero Content */}
       <div className="relative z-10 max-w-4xl px-6 text-white">
         {/* Animated Heading */}
-        <h1 className="mb-6 max-w-[630px] text-center leading-tight font-extrabold tracking-tight">
+        <h1 className="mb-6 max-w-[700px] text-center leading-tight font-extrabold tracking-tight">
           <TextAnimate
             by="character"
             animation="blurInUp"
-            className="text-4xl font-extrabold text-white drop-shadow-xl sm:text-5xl md:text-6xl"
+            className="text-2xl font-extrabold text-white drop-shadow-xl sm:text-5xl md:text-4xl"
             duration={0.8}
             once
           >
-            Empowering Digital Transformation with
+            Empowering Digital Transformation
           </TextAnimate>
 
-          <TextAnimate
+          {/* <TextAnimate
             by="character"
             animation="blurInUp"
             delay={0.5}
@@ -45,7 +44,7 @@ export default function HeroSection() {
             once
           >
             Iqud
-          </TextAnimate>
+          </TextAnimate> */}
         </h1>
 
         {/* Animated Subtext */}
